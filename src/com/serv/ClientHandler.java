@@ -94,7 +94,7 @@ public class ClientHandler extends Thread {
                 this.login = login;
                 System.out.println("User logged in succsesfully: " + login);
 
-                List<ClientHandler> workerList = server.getWorkerList();
+                List<ClientHandler> workerList = server.getClients();
 
                 // send current user all other online logins
                 for (ClientHandler worker : workerList) {
